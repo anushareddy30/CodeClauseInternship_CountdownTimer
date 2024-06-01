@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDownTimer</title>
+    <link rel="stylesheet" href="countdowntimer.css">
+</head>
+<body>
+    <h1>CountDownTimer</h1>
+    <form id="main">
+        <label for="DateInp">Enter Date</label>
+        <input type="text" id="DateInp" name="DateInp">
+        <button type="button" id="Start" onclick="startCount()">Start</button>
+        <button type="button" id="Reset" onclick="resetCount()">Reset</button>
+    </form>
+    <div class="timer">
+        <div class="time-values">
+            <span id="Days">00</span>
+            <span>:</span>
+            <span id="Hours">00</span>
+            <span>:</span>
+            <span id="Minutes">00</span>
+            <span>:</span>
+            <span id="Seconds">00</span>
+        </div>
+        <div class="time-labels">
+            <div class="container">Days</div>
+            <div class="container">Hrs</div>
+            <div class="container">Mins</div>
+            <div class="container">Sec</div>
+        </div>
+     </div>
+    <script src="countdowntimer.js"></script>
+</body>
+</html>
